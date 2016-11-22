@@ -1,36 +1,36 @@
 {
-	"id": "com.mipow.playbulb",
+	"id": "com.flic.io",
 	"version": "0.0.1",
 	"compatibility": ">=1.0.0",
 	"name": {
-		"en": "Mipow Playbulb (Experimental)",
-		"nl": "Mipow Playbulb (Experimenteel)"
+		"en": "Flic.io (Experimental)",
+		"nl": "Flic.io (Experimenteel)"
 	},
 	"description": {
-		"en": "This app enables you to use the Bluetooth 4.0 Mipow bluetooth lamps",
-		"nl": "Deze app onderstuend de Bluetooth 4.0 lampen van Mipow"
+		"en": "This app enables you to use the Flic.io bluetooth button",
+		"nl": "Deze app ondersteund de Bluetooth Flic.io button"
 	},
 	"images": {
 		"large": "assets/images/large.jpg",
 		"small": "assets/images/small.jpg"
 	},
 	"author": {
-		"name": "Athom B.V."
+		"name": "Marco Ruiter"
 	},
 	"category": [
-		"lights"
+		"appliances"
 	],
 	"drivers": [
 		{
-			"id": "playbulb",
-			"icon": "drivers/playbulb/assets/icon.svg",
+			"id": "flic",
+			"icon": "drivers/flic/assets/icon.svg",
 			"images": {
-				"large": "drivers/playbulb/assets/images/large.jpg",
-				"small": "drivers/playbulb/assets/images/small.jpg"
+				"large": "drivers/flic/assets/images/large.jpg",
+				"small": "drivers/flic/assets/images/small.jpg"
 			},
 			"name": {
-				"en": "MiPow Playbulb",
-				"nl": "MiPow Playbulb"
+				"en": "Flic.io Button",
+				"nl": "Flic.io Button"
 			},
 			"class": "light",
 			"capabilities": [
@@ -68,7 +68,7 @@
 					{
 						"name": "device",
 						"type": "device",
-						"filter": "driver_id=playbulb"
+						"filter": "driver_id=flic"
 					},
 					{
 						"name": "speed",
@@ -100,7 +100,7 @@
 					{
 						"name": "device",
 						"type": "device",
-						"filter": "driver_id=playbulb"
+						"filter": "driver_id=flic"
 					},
 					{
 						"name": "speed",
@@ -132,7 +132,7 @@
 					{
 						"name": "device",
 						"type": "device",
-						"filter": "driver_id=playbulb"
+						"filter": "driver_id=flic"
 					},
 					{
 						"name": "speed",
@@ -164,7 +164,7 @@
 					{
 						"name": "device",
 						"type": "device",
-						"filter": "driver_id=playbulb"
+						"filter": "driver_id=flic"
 					},
 					{
 						"name": "speed",
@@ -192,7 +192,7 @@
 					{
 						"name": "device",
 						"type": "device",
-						"filter": "driver_id=playbulb"
+						"filter": "driver_id=flic"
 					},
 					{
 						"name": "speed",
@@ -220,7 +220,7 @@
 					{
 						"name": "device",
 						"type": "device",
-						"filter": "driver_id=playbulb"
+						"filter": "driver_id=flic"
 					}
 				]
 			}
