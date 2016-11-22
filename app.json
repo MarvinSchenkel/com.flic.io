@@ -1,0 +1,229 @@
+{
+	"id": "com.mipow.playbulb",
+	"version": "0.0.1",
+	"compatibility": ">=1.0.0",
+	"name": {
+		"en": "Mipow Playbulb (Experimental)",
+		"nl": "Mipow Playbulb (Experimenteel)"
+	},
+	"description": {
+		"en": "This app enables you to use the Bluetooth 4.0 Mipow bluetooth lamps",
+		"nl": "Deze app onderstuend de Bluetooth 4.0 lampen van Mipow"
+	},
+	"images": {
+		"large": "assets/images/large.jpg",
+		"small": "assets/images/small.jpg"
+	},
+	"author": {
+		"name": "Athom B.V."
+	},
+	"category": [
+		"lights"
+	],
+	"drivers": [
+		{
+			"id": "playbulb",
+			"icon": "drivers/playbulb/assets/icon.svg",
+			"images": {
+				"large": "drivers/playbulb/assets/images/large.jpg",
+				"small": "drivers/playbulb/assets/images/small.jpg"
+			},
+			"name": {
+				"en": "MiPow Playbulb",
+				"nl": "MiPow Playbulb"
+			},
+			"class": "light",
+			"capabilities": [
+				"onoff",
+				"dim",
+				"light_hue",
+				"light_saturation",
+				"light_temperature",
+				"light_mode"
+			],
+			"pair": [
+				{
+					"id": "list_devices",
+					"template": "list_devices",
+					"navigation": {
+						"next": "add_devices"
+					}
+				},
+				{
+					"id": "add_devices",
+					"template": "add_devices"
+				}
+			]
+		}
+	],
+	"flow": {
+		"actions": [
+			{
+				"id": "flash",
+				"title": {
+					"en": "Flash the light",
+					"nl": "Laat de lamp flitsen"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=playbulb"
+					},
+					{
+						"name": "speed",
+						"type": "range",
+						"placeholder": {
+							"en": "Speed",
+							"nl": "Snelheid"
+						},
+						"min": "0",
+						"max": "1",
+						"step": "0.01",
+						"label": "%",
+						"labelMultiplier": 100,
+						"labelDecimals": 0
+					},
+					{
+						"name": "color",
+						"type": "color"
+					}
+				]
+			},
+			{
+				"id": "pulse",
+				"title": {
+					"en": "Pulse the light",
+					"nl": "Pulseer de lamp"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=playbulb"
+					},
+					{
+						"name": "speed",
+						"type": "range",
+						"placeholder": {
+							"en": "Speed",
+							"nl": "Snelheid"
+						},
+						"min": "0",
+						"max": "1",
+						"step": "0.01",
+						"label": "%",
+						"labelMultiplier": 100,
+						"labelDecimals": 0
+					},
+					{
+						"name": "color",
+						"type": "color"
+					}
+				]
+			},
+			{
+				"id": "candle",
+				"title": {
+					"en": "Play a candle effect",
+					"nl": "Speel een kaars effect"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=playbulb"
+					},
+					{
+						"name": "speed",
+						"type": "range",
+						"placeholder": {
+							"en": "Speed",
+							"nl": "Snelheid"
+						},
+						"min": "0",
+						"max": "1",
+						"step": "0.01",
+						"label": "%",
+						"labelMultiplier": 100,
+						"labelDecimals": 0
+					},
+					{
+						"name": "color",
+						"type": "color"
+					}
+				]
+			},
+			{
+				"id": "rainbow",
+				"title": {
+					"en": "Play a rainbow effect",
+					"nl": "Speel een regenboog effect"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=playbulb"
+					},
+					{
+						"name": "speed",
+						"type": "range",
+						"placeholder": {
+							"en": "Speed",
+							"nl": "Snelheid"
+						},
+						"min": "0",
+						"max": "1",
+						"step": "0.01",
+						"label": "%",
+						"labelMultiplier": 100,
+						"labelDecimals": 0
+					}
+				]
+			},
+			{
+				"id": "rainbow_fade",
+				"title": {
+					"en": "Play a fading rainbow effect",
+					"nl": "Speel een vloeiend regenboog effect"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=playbulb"
+					},
+					{
+						"name": "speed",
+						"type": "range",
+						"placeholder": {
+							"en": "Speed",
+							"nl": "Snelheid"
+						},
+						"min": "0",
+						"max": "1",
+						"step": "0.01",
+						"label": "%",
+						"labelMultiplier": 100,
+						"labelDecimals": 0
+					}
+				]
+			},
+			{
+				"id": "stop_effect",
+				"title": {
+					"en": "Stop current effect",
+					"nl": "Stop huidig effect"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=playbulb"
+					}
+				]
+			}
+		]
+	}
+}
