@@ -9,20 +9,8 @@ const devices = new Map();
 const states = new Map();
 
 const DEVICE_MAP = {
-	BTL201: {
-		SERVICE_CONTROL: 'ff06',
-	},
-	BTL300: {
-		SERVICE_CONTROL: 'ff02',
-	},
-	BTL301W: {
-		SERVICE_CONTROL: 'ff08',
-	},
-	'MESH GARDEN': {
-		SERVICE_CONTROL: 'fe03',
-	},
-	BTL200: {
-		SERVICE_CONTROL: 'ff01',
+	FLIC: {
+		SERVICE_CONTROL: 'f02adfc026e711e49edc0002a5d5c51b',
 	},
 };
 const SERVICE_CONTROL_SET = new Set(Object.keys(DEVICE_MAP).map(type => DEVICE_MAP[type].SERVICE_CONTROL));
