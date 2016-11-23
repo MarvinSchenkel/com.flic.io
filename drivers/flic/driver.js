@@ -28,9 +28,9 @@ const DEVICE_MAP = {
 const SERVICE_CONTROL_SET = new Set(Object.keys(DEVICE_MAP).map(type => DEVICE_MAP[type].SERVICE_CONTROL));
 
 
-const SERVICE_MANUFACTURER = '80e4';
+const SERVICE_MANUFACTURER = '1800';
 
-const CHAR_SERIALNR = 'da70';
+const CHAR_SERIALNR = '2a00';
 const CHAR_NAME = 'ffff';
 const CHAR_COLOR = 'fffc';
 const CHAR_EFFECT = 'fffb';

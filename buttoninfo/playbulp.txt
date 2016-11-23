@@ -1,0 +1,723 @@
+{
+	"uuid": "4ad44b0face6",
+	"address": "4a:d4:4b:0f:ac:e6",
+	"addressType": "public",
+	"connectable": true,
+	"advertisement": {
+		"localName": "PLAYBULB SPHERE",
+		"manufacturerData": "0x4d49504f57 | MIPOW",
+		"serviceData": [],
+		"serviceUuids": [
+			"ff08"
+		]
+	},
+	"rssi": -79,
+	"state": "connected",
+	"services": [
+		{
+			"uuid": "1800",
+			"name": "Generic Access",
+			"type": "org.bluetooth.service.generic_access",
+			"includedServiceUuids": null,
+			"characteristics": [
+				{
+					"uuid": "2a00",
+					"name": "Device Name",
+					"type": "org.bluetooth.characteristic.gap.device_name",
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x504c415942554c4220535048455245 | 'PLAYBULB SPHERE",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a01",
+					"name": "Appearance",
+					"type": "org.bluetooth.characteristic.gap.appearance",
+					"properties": [
+						"read"
+					],
+					"value": "0x4003 | '@\u0003",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a04",
+					"name": "Peripheral Preferred Connection Parameters",
+					"type": "org.bluetooth.characteristic.gap.peripheral_preferred_connection_parameters",
+					"properties": [
+						"read"
+					],
+					"value": "0x1000200000005802 | '\u0010\u0000 \u0000\u0000\u0000X\u0002",
+					"descriptors": []
+				}
+			],
+			"includedServices": []
+		},
+		{
+			"uuid": "1801",
+			"name": "Generic Attribute",
+			"type": "org.bluetooth.service.generic_attribute",
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a05",
+					"name": "Service Changed",
+					"type": "org.bluetooth.characteristic.gatt.service_changed",
+					"properties": [
+						"read",
+						"indicate"
+					],
+					"value": "0x0500ffff | '\u0005\u0000",
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "0x37b0 | '70"
+						}
+					]
+				}
+			]
+		},
+		{
+			"uuid": "ff08",
+			"name": null,
+			"type": null,
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a37",
+					"name": "Heart Rate Measurement",
+					"type": "org.bluetooth.characteristic.heart_rate_measurement",
+					"properties": [
+						"notify"
+					],
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "0x0000b2b3dd0f8f01000000f916000ffc6500ea09 | '\u0000\u000023]\u000f\u000f\u0001\u0000\u0000\u0000y\u0016\u0000\u000f|e\u0000j\t"
+						}
+					]
+				},
+				{
+					"uuid": "2a39",
+					"name": "Heart Rate Control Point",
+					"type": "org.bluetooth.characteristic.heart_rate_control_point",
+					"properties": [
+						"read",
+						"writeWithoutResponse",
+						"write"
+					],
+					"value": "0x | '",
+					"descriptors": []
+				},
+				{
+					"uuid": "fff8",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read"
+					],
+					"value": "0x0000000000000000000000000000000000000000 | '\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fff9",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x000000ffffffff000000000000 | '\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffa",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"writeWithoutResponse"
+					],
+					"value": "0x00 | '\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffb",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"writeWithoutResponse"
+					],
+					"value": "0xff000000ff000132 | '\u0000\u0000\u0000\u0000\u00012",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffc",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"writeWithoutResponse"
+					],
+					"value": "0x00c90000 | '\u0000I\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffd",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x00000000 | '\u0000\u0000\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffe",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x04ffff04ffff04ffff04ffff0000 | '\u0004\u0004\u0004\u0004\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "ffff",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x504c415942554c4220535048455245 | 'PLAYBULB SPHERE",
+					"descriptors": []
+				}
+			]
+		},
+		{
+			"uuid": "180f",
+			"name": "Battery Service",
+			"type": "org.bluetooth.service.battery_service",
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a19",
+					"name": "Battery Level",
+					"type": "org.bluetooth.characteristic.battery_level",
+					"properties": [
+						"read",
+						"notify"
+					],
+					"value": "0x | '",
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "[Error] Request timed out."
+						}
+					]
+				}
+			]
+		},
+		{
+			"uuid": "180a",
+			"name": "Device Information",
+			"type": "org.bluetooth.service.device_information",
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a25",
+					"name": "Serial Number String",
+					"type": "org.bluetooth.characteristic.serial_number_string",
+					"properties": [
+						"read"
+					],
+					"value": "0x42544c33303157 | 'BTL301W",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a27",
+					"name": "Hardware Revision String",
+					"type": "org.bluetooth.characteristic.hardware_revision_string",
+					"properties": [
+						"read"
+					],
+					"value": "0x4353523130317820413035 | 'CSR101x A05",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a26",
+					"name": "Firmware Revision String",
+					"type": "org.bluetooth.characteristic.firmware_revision_string",
+					"properties": [
+						"read"
+					],
+					"value": "0x42544c333031575f7635 | 'BTL301W_v5",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a28",
+					"name": "Software Revision String",
+					"type": "org.bluetooth.characteristic.software_revision_string",
+					"properties": [
+						"read"
+					],
+					"descriptors": [],
+					"value": "0x4170706c69636174696f6e2076657273696f6e20322e342e332e3236 | 'Application version 2.4.3.26"
+				},
+				{
+					"uuid": "2a29",
+					"name": "Manufacturer Name String",
+					"type": "org.bluetooth.characteristic.manufacturer_name_string",
+					"properties": [
+						"read"
+					],
+					"value": "0x4d69706f77204c696d69746564 | 'Mipow Limited",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a50",
+					"name": "PnP ID",
+					"type": "org.bluetooth.characteristic.pnp_id",
+					"properties": [
+						"read"
+					],
+					"value": "0x010a004c010001 | '\u0001\n\u0000L\u0001\u0000\u0001",
+					"descriptors": []
+				}
+			]
+		},
+		{
+			"uuid": "00001016d10211e19b2300025b00a5a5",
+			"name": null,
+			"type": null,
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "00001013d10211e19b2300025b00a5a5",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x01 | '\u0001",
+					"descriptors": []
+				},
+				{
+					"uuid": "00001018d10211e19b2300025b00a5a5",
+					"name": null,
+					"type": null,
+					"properties": [
+						"write"
+					],
+					"descriptors": []
+				},
+				{
+					"uuid": "00001014d10211e19b2300025b00a5a5",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"notify"
+					],
+					"value": "0x | '",
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "[Error] Request timed out."
+						}
+					]
+				},
+				{
+					"uuid": "00001011d10211e19b2300025b00a5a5",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read"
+					],
+					"value": "0x06 | '\u0006",
+					"descriptors": []
+				}
+			]
+		}
+	]
+}{
+	"uuid": "4ad44b0face6",
+	"address": "4a:d4:4b:0f:ac:e6",
+	"addressType": "public",
+	"connectable": true,
+	"advertisement": {
+		"localName": "PLAYBULB SPHERE",
+		"manufacturerData": "0x4d49504f57 | MIPOW",
+		"serviceData": [],
+		"serviceUuids": [
+			"ff08"
+		]
+	},
+	"rssi": -79,
+	"state": "connected",
+	"services": [
+		{
+			"uuid": "1800",
+			"name": "Generic Access",
+			"type": "org.bluetooth.service.generic_access",
+			"includedServiceUuids": null,
+			"characteristics": [
+				{
+					"uuid": "2a00",
+					"name": "Device Name",
+					"type": "org.bluetooth.characteristic.gap.device_name",
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x504c415942554c4220535048455245 | 'PLAYBULB SPHERE",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a01",
+					"name": "Appearance",
+					"type": "org.bluetooth.characteristic.gap.appearance",
+					"properties": [
+						"read"
+					],
+					"value": "0x4003 | '@\u0003",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a04",
+					"name": "Peripheral Preferred Connection Parameters",
+					"type": "org.bluetooth.characteristic.gap.peripheral_preferred_connection_parameters",
+					"properties": [
+						"read"
+					],
+					"value": "0x1000200000005802 | '\u0010\u0000 \u0000\u0000\u0000X\u0002",
+					"descriptors": []
+				}
+			],
+			"includedServices": []
+		},
+		{
+			"uuid": "1801",
+			"name": "Generic Attribute",
+			"type": "org.bluetooth.service.generic_attribute",
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a05",
+					"name": "Service Changed",
+					"type": "org.bluetooth.characteristic.gatt.service_changed",
+					"properties": [
+						"read",
+						"indicate"
+					],
+					"value": "0x0500ffff | '\u0005\u0000",
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "0x37b0 | '70"
+						}
+					]
+				}
+			]
+		},
+		{
+			"uuid": "ff08",
+			"name": null,
+			"type": null,
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a37",
+					"name": "Heart Rate Measurement",
+					"type": "org.bluetooth.characteristic.heart_rate_measurement",
+					"properties": [
+						"notify"
+					],
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "0x0000b2b3dd0f8f01000000f916000ffc6500ea09 | '\u0000\u000023]\u000f\u000f\u0001\u0000\u0000\u0000y\u0016\u0000\u000f|e\u0000j\t"
+						}
+					]
+				},
+				{
+					"uuid": "2a39",
+					"name": "Heart Rate Control Point",
+					"type": "org.bluetooth.characteristic.heart_rate_control_point",
+					"properties": [
+						"read",
+						"writeWithoutResponse",
+						"write"
+					],
+					"value": "0x | '",
+					"descriptors": []
+				},
+				{
+					"uuid": "fff8",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read"
+					],
+					"value": "0x0000000000000000000000000000000000000000 | '\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fff9",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x000000ffffffff000000000000 | '\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffa",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"writeWithoutResponse"
+					],
+					"value": "0x00 | '\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffb",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"writeWithoutResponse"
+					],
+					"value": "0xff000000ff000132 | '\u0000\u0000\u0000\u0000\u00012",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffc",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"writeWithoutResponse"
+					],
+					"value": "0x00c90000 | '\u0000I\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffd",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x00000000 | '\u0000\u0000\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "fffe",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x04ffff04ffff04ffff04ffff0000 | '\u0004\u0004\u0004\u0004\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "ffff",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x504c415942554c4220535048455245 | 'PLAYBULB SPHERE",
+					"descriptors": []
+				}
+			]
+		},
+		{
+			"uuid": "180f",
+			"name": "Battery Service",
+			"type": "org.bluetooth.service.battery_service",
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a19",
+					"name": "Battery Level",
+					"type": "org.bluetooth.characteristic.battery_level",
+					"properties": [
+						"read",
+						"notify"
+					],
+					"value": "0x | '",
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "[Error] Request timed out."
+						}
+					]
+				}
+			]
+		},
+		{
+			"uuid": "180a",
+			"name": "Device Information",
+			"type": "org.bluetooth.service.device_information",
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a25",
+					"name": "Serial Number String",
+					"type": "org.bluetooth.characteristic.serial_number_string",
+					"properties": [
+						"read"
+					],
+					"value": "0x42544c33303157 | 'BTL301W",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a27",
+					"name": "Hardware Revision String",
+					"type": "org.bluetooth.characteristic.hardware_revision_string",
+					"properties": [
+						"read"
+					],
+					"value": "0x4353523130317820413035 | 'CSR101x A05",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a26",
+					"name": "Firmware Revision String",
+					"type": "org.bluetooth.characteristic.firmware_revision_string",
+					"properties": [
+						"read"
+					],
+					"value": "0x42544c333031575f7635 | 'BTL301W_v5",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a28",
+					"name": "Software Revision String",
+					"type": "org.bluetooth.characteristic.software_revision_string",
+					"properties": [
+						"read"
+					],
+					"descriptors": [],
+					"value": "0x4170706c69636174696f6e2076657273696f6e20322e342e332e3236 | 'Application version 2.4.3.26"
+				},
+				{
+					"uuid": "2a29",
+					"name": "Manufacturer Name String",
+					"type": "org.bluetooth.characteristic.manufacturer_name_string",
+					"properties": [
+						"read"
+					],
+					"value": "0x4d69706f77204c696d69746564 | 'Mipow Limited",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a50",
+					"name": "PnP ID",
+					"type": "org.bluetooth.characteristic.pnp_id",
+					"properties": [
+						"read"
+					],
+					"value": "0x010a004c010001 | '\u0001\n\u0000L\u0001\u0000\u0001",
+					"descriptors": []
+				}
+			]
+		},
+		{
+			"uuid": "00001016d10211e19b2300025b00a5a5",
+			"name": null,
+			"type": null,
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "00001013d10211e19b2300025b00a5a5",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x01 | '\u0001",
+					"descriptors": []
+				},
+				{
+					"uuid": "00001018d10211e19b2300025b00a5a5",
+					"name": null,
+					"type": null,
+					"properties": [
+						"write"
+					],
+					"descriptors": []
+				},
+				{
+					"uuid": "00001014d10211e19b2300025b00a5a5",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"notify"
+					],
+					"value": "0x | '",
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "[Error] Request timed out."
+						}
+					]
+				},
+				{
+					"uuid": "00001011d10211e19b2300025b00a5a5",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read"
+					],
+					"value": "0x06 | '\u0006",
+					"descriptors": []
+				}
+			]
+		}
+	]
+}
