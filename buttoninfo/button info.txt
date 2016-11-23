@@ -1,0 +1,142 @@
+null "{
+	"uuid": "80e4da70f2d6",
+	"address": "80:e4:da:70:f2:d6",
+	"addressType": "public",
+	"connectable": true,
+	"advertisement": {
+		"localName": "F012cPLW",
+		"manufacturerData": null,
+		"serviceData": [],
+		"serviceUuids": [
+			"f02adfc026e711e49edc0002a5d5c51b"
+		]
+	},
+	"rssi": -92,
+	"state": "connected",
+	"services": [
+		{
+			"uuid": "1800",
+			"name": "Generic Access",
+			"type": "org.bluetooth.service.generic_access",
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a00",
+					"name": "Device Name",
+					"type": "org.bluetooth.characteristic.gap.device_name",
+					"properties": [
+						"read"
+					],
+					"value": "0x4630313263504c57 | 'F012cPLW",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a01",
+					"name": "Appearance",
+					"type": "org.bluetooth.characteristic.gap.appearance",
+					"properties": [
+						"read"
+					],
+					"value": "0x0000 | '\u0000\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a02",
+					"name": "Peripheral Privacy Flag",
+					"type": "org.bluetooth.characteristic.gap.peripheral_privacy_flag",
+					"properties": [
+						"read",
+						"write"
+					],
+					"value": "0x00 | '\u0000",
+					"descriptors": []
+				},
+				{
+					"uuid": "2a04",
+					"name": "Peripheral Preferred Connection Parameters",
+					"type": "org.bluetooth.characteristic.gap.peripheral_preferred_connection_parameters",
+					"properties": [
+						"read"
+					],
+					"value": "0x2000280000009001 | ' \u0000(\u0000\u0000\u0000\u0010\u0001",
+					"descriptors": []
+				}
+			]
+		},
+		{
+			"uuid": "1801",
+			"name": "Generic Attribute",
+			"type": "org.bluetooth.service.generic_attribute",
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "2a05",
+					"name": "Service Changed",
+					"type": "org.bluetooth.characteristic.gatt.service_changed",
+					"properties": [
+						"read",
+						"indicate"
+					],
+					"value": "0x0100ffff | '\u0001\u0000",
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "0x0000 | '\u0000\u0000"
+						}
+					]
+				}
+			]
+		},
+		{
+			"uuid": "f02adfc026e711e49edc0002a5d5c51b",
+			"name": null,
+			"type": null,
+			"includedServiceUuids": null,
+			"includedServices": [],
+			"characteristics": [
+				{
+					"uuid": "cc7efce026e811e48fd20002a5d5c51b",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"writeWithoutResponse",
+						"write",
+						"notify"
+					],
+					"value": "0x4200000000000000000000000000000000000000 | 'B\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "0x0000 | '\u0000\u0000"
+						}
+					]
+				},
+				{
+					"uuid": "06053ec026e911e4adc20002a5d5c51b",
+					"name": null,
+					"type": null,
+					"properties": [
+						"read",
+						"notify"
+					],
+					"value": "0x000000000000000000000000000000 | '\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+					"descriptors": [
+						{
+							"uuid": "2902",
+							"name": "Client Characteristic Configuration",
+							"type": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+							"value": "0x0000 | '\u0000\u0000"
+						}
+					]
+				}
+			]
+		}
+	]
+}"

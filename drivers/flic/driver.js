@@ -1,6 +1,6 @@
 'use strict';
 
-const DEBUG_FLAG = false;
+const DEBUG_FLAG = true;
 const convert = require('color-convert');
 const kelvinToRgb = require('kelvin-to-rgb');
 
@@ -28,9 +28,9 @@ const DEVICE_MAP = {
 const SERVICE_CONTROL_SET = new Set(Object.keys(DEVICE_MAP).map(type => DEVICE_MAP[type].SERVICE_CONTROL));
 
 
-const SERVICE_MANUFACTURER = '180a';
+const SERVICE_MANUFACTURER = '80e4';
 
-const CHAR_SERIALNR = '2a25';
+const CHAR_SERIALNR = 'da70';
 const CHAR_NAME = 'ffff';
 const CHAR_COLOR = 'fffc';
 const CHAR_EFFECT = 'fffb';
