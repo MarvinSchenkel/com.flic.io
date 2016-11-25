@@ -1,6 +1,6 @@
 'use strict';
 
-const DEBUG_FLAG = false;
+const DEBUG_FLAG = true;
 const convert = require('color-convert');
 const kelvinToRgb = require('kelvin-to-rgb');
 

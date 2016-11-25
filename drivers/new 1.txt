@@ -1,0 +1,55 @@
+-------------------------------------------------
+Initializing driver for F0
+LIST DEVICES
+DISCOVER 3
+checking advertisement f877b8be6fd6 []
+checking advertisement 244b037488e1 []
+checking advertisement 80e4da710b06 [ 'f02adfc026e711e49edc0002a5d5c51b' ]
+connecting to Advertisement {
+  id: '80e4da710b06',
+  uuid: '80e4da710b06',
+  address: '80:e4:da:71:0b:06',
+  addressType: 'public',
+  connectable: true,
+  localName: 'f022cQsG',
+  manufacturerData: <Buffer 0f 03 00 03 6e 06 bd d7 02 00 8c 06 02 00 00 da e4 8
+0>,
+  serviceData: [],
+  serviceUuids: [ 'f02adfc026e711e49edc0002a5d5c51b' ],
+  rssi: -79,
+  connect: [Function: bound connect],
+  printInfo: [Function: bound printInfo] }
+User aborted pairing, or pairing is finished
+LIST DEVICES
+User aborted pairing, or pairing is finished
+Disconnected from Homey, automatically reconnecting...
+
+
+---------
+
+
+-------------------------------------------------
+Initializing driver for F0
+LIST DEVICES
+DISCOVER 3
+checking advertisement f877b8be6fd6 []
+checking advertisement 244b037488e1 []
+checking advertisement 80e4da710b06 [ 'f02adfc026e711e49edc0002a5d5c51b' ]
+connecting to Advertisement {
+  id: '80e4da710b06',
+  uuid: '80e4da710b06',
+  address: '80:e4:da:71:0b:06',
+  addressType: 'public',
+  connectable: true,
+  localName: 'f022cQsG',
+  manufacturerData: <Buffer 0f 03 00 03 6e 06 bd d7 02 00 8c 06 02 00 00 da e4 8
+0>,
+  serviceData: [],
+  serviceUuids: [ 'f02adfc026e711e49edc0002a5d5c51b' ],
+  rssi: -79,
+  connect: [Function: bound connect],
+  printInfo: [Function: bound printInfo] }
+User aborted pairing, or pairing is finished
+LIST DEVICES
+User aborted pairing, or pairing is finished
+Disconnected from Homey, automatically reconnecting...
