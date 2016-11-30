@@ -1,229 +1,34 @@
 {
-	"id": "com.flic.io",
-	"version": "0.0.1",
-	"compatibility": ">=1.0.0",
-	"name": {
-		"en": "Flic.io (Experimental)",
-		"nl": "Flic.io (Experimenteel)"
-	},
-	"description": {
-		"en": "This app enables you to use the Flic.io bluetooth button",
-		"nl": "Deze app ondersteund de Bluetooth Flic.io button"
-	},
-	"images": {
-		"large": "assets/images/large.jpg",
-		"small": "assets/images/small.jpg"
-	},
-	"author": {
-		"name": "Marco Ruiter"
-	},
-	"category": [
-		"appliances"
-	],
-	"drivers": [
-		{
-			"id": "flic",
-			"icon": "drivers/flic/assets/icon.svg",
-			"images": {
-				"large": "drivers/flic/assets/images/large.jpg",
-				"small": "drivers/flic/assets/images/small.jpg"
-			},
-			"name": {
-				"en": "Flic.io Button",
-				"nl": "Flic.io Button"
-			},
-			"class": "light",
-			"capabilities": [
-				"onoff",
-				"dim",
-				"light_hue",
-				"light_saturation",
-				"light_temperature",
-				"light_mode"
-			],
-			"pair": [
-				{
-					"id": "list_devices",
-					"template": "list_devices",
-					"navigation": {
-						"next": "add_devices"
-					}
-				},
-				{
-					"id": "add_devices",
-					"template": "add_devices"
-				}
-			]
-		}
-	],
-	"flow": {
-		"actions": [
-			{
-				"id": "flash",
-				"title": {
-					"en": "Flash the light",
-					"nl": "Laat de lamp flitsen"
-				},
-				"args": [
-					{
-						"name": "device",
-						"type": "device",
-						"filter": "driver_id=flic"
-					},
-					{
-						"name": "speed",
-						"type": "range",
-						"placeholder": {
-							"en": "Speed",
-							"nl": "Snelheid"
-						},
-						"min": "0",
-						"max": "1",
-						"step": "0.01",
-						"label": "%",
-						"labelMultiplier": 100,
-						"labelDecimals": 0
-					},
-					{
-						"name": "color",
-						"type": "color"
-					}
-				]
-			},
-			{
-				"id": "pulse",
-				"title": {
-					"en": "Pulse the light",
-					"nl": "Pulseer de lamp"
-				},
-				"args": [
-					{
-						"name": "device",
-						"type": "device",
-						"filter": "driver_id=flic"
-					},
-					{
-						"name": "speed",
-						"type": "range",
-						"placeholder": {
-							"en": "Speed",
-							"nl": "Snelheid"
-						},
-						"min": "0",
-						"max": "1",
-						"step": "0.01",
-						"label": "%",
-						"labelMultiplier": 100,
-						"labelDecimals": 0
-					},
-					{
-						"name": "color",
-						"type": "color"
-					}
-				]
-			},
-			{
-				"id": "candle",
-				"title": {
-					"en": "Play a candle effect",
-					"nl": "Speel een kaars effect"
-				},
-				"args": [
-					{
-						"name": "device",
-						"type": "device",
-						"filter": "driver_id=flic"
-					},
-					{
-						"name": "speed",
-						"type": "range",
-						"placeholder": {
-							"en": "Speed",
-							"nl": "Snelheid"
-						},
-						"min": "0",
-						"max": "1",
-						"step": "0.01",
-						"label": "%",
-						"labelMultiplier": 100,
-						"labelDecimals": 0
-					},
-					{
-						"name": "color",
-						"type": "color"
-					}
-				]
-			},
-			{
-				"id": "rainbow",
-				"title": {
-					"en": "Play a rainbow effect",
-					"nl": "Speel een regenboog effect"
-				},
-				"args": [
-					{
-						"name": "device",
-						"type": "device",
-						"filter": "driver_id=flic"
-					},
-					{
-						"name": "speed",
-						"type": "range",
-						"placeholder": {
-							"en": "Speed",
-							"nl": "Snelheid"
-						},
-						"min": "0",
-						"max": "1",
-						"step": "0.01",
-						"label": "%",
-						"labelMultiplier": 100,
-						"labelDecimals": 0
-					}
-				]
-			},
-			{
-				"id": "rainbow_fade",
-				"title": {
-					"en": "Play a fading rainbow effect",
-					"nl": "Speel een vloeiend regenboog effect"
-				},
-				"args": [
-					{
-						"name": "device",
-						"type": "device",
-						"filter": "driver_id=flic"
-					},
-					{
-						"name": "speed",
-						"type": "range",
-						"placeholder": {
-							"en": "Speed",
-							"nl": "Snelheid"
-						},
-						"min": "0",
-						"max": "1",
-						"step": "0.01",
-						"label": "%",
-						"labelMultiplier": 100,
-						"labelDecimals": 0
-					}
-				]
-			},
-			{
-				"id": "stop_effect",
-				"title": {
-					"en": "Stop current effect",
-					"nl": "Stop huidig effect"
-				},
-				"args": [
-					{
-						"name": "device",
-						"type": "device",
-						"filter": "driver_id=flic"
-					}
-				]
-			}
-		]
-	}
+    "id": "io.flic",
+    "name": {
+        "en": "Flic Button"
+    },
+    "version": "0.0.1",
+    "compatibility": "0.x || 1.x",
+    "author": {
+        "name": "Bas Jansen",
+        "email": "bas@balotti.com"
+    },
+    "drivers": [{
+        "id": "flic-button",
+        "name": {
+            "en": "Flic Button"
+        },
+        "images": {
+            "large": "./drivers/chromecast/assets/images/large.jpg",
+            "small": "./drivers/chromecast/assets/images/small.jpg"
+        },
+        "class": "other",
+        "capabilities": [],
+        "pair": [{
+            "id": "list_flic",
+            "template": "list_devices",
+            "navigation": {
+                "next": "add_flic"
+            }
+        }, {
+            "id": "add_flic",
+            "template": "add_devices"
+        }]
+    }]
 }

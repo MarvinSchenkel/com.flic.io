@@ -1,5 +1,9 @@
-'use strict';
+"use strict";
 
-module.exports.init = function () {
+function init() {
+	
+	Homey.log("Hello world!");
+	
+}
 
-};
+module.exports.init = init;
