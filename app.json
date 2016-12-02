@@ -15,8 +15,8 @@
             "en": "Flic Button"
         },
         "images": {
-            "large": "./drivers/chromecast/assets/images/large.jpg",
-            "small": "./drivers/chromecast/assets/images/small.jpg"
+            "large": "./drivers/flic-button/assets/images/large.jpg",
+            "small": "./drivers/flic-button/assets/images/small.jpg"
         },
         "class": "other",
         "capabilities": [],
